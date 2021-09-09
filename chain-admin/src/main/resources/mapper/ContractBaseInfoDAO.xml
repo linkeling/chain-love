@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 合同基本信息表 -->
+<mapper namespace="com.match.making.dao.ContractBaseInfoDAO">
+    <sql id="allColumns">
+        t.id as id, t.first_id as firstId, t.first_name as firstName, t.first_address as firstAddress, t.second_name as secondName, t.id_card as idCard, t.fee_scale as feeScale, t.fee_total as feeTotal, 
+        t.second_address as secondAddress, t.second_phone as secondPhone, t.sign_date as signDate,t.visit_info_id as visitInfoId, t.enclosure_id as enclosureId, t.status as status, t.created as created, t.updated as updated
+    </sql>
+</mapper>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 系统管理-角色表  -->
+<mapper namespace="com.match.making.dao.SysRoleDAO">
+    <sql id="allColumns">
+        t.id as id, t.role_code as roleCode, t.role_name as roleName, t.remarks as remarks, t.created as created, t.updated as updated
+    </sql>
+</mapper>

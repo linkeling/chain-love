@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 枚举值 -->
+<mapper namespace="com.match.making.dao.SysEnumValueDAO">
+    <sql id="allColumns">
+        t.id as id, t.parent_id as parentId, t.enum_id as enumId, t.enum_name as enumName, t.enum_name2 as enumName2, t.enum_value as enumValue, t.filter_condition as filterCondition, t.display_order as displayOrder, 
+        t.valid_status as validStatus, t.created as created, t.updated as updated, t.old_value as oldValue
+    </sql>
+</mapper>

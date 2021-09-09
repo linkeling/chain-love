@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 客户信息管理 -->
+<mapper namespace="com.match.making.dao.CustomVisitInfoDAO">
+    <sql id="allColumns">
+        t.id as id, t.person_id as personId, t.custom_id as customId, t.custom_name as customName, t.id_card as idCard,t.gender as gender, t.telephone as telephone, t.type as type, t.days as days,t.service_num as serviceNum，
+        t.next_date as nextDate, t.love_status as loveStatus, t.status as status, t.created as created, t.updated as updated
+    </sql>
+</mapper>

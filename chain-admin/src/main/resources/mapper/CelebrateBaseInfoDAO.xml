@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 婚庆信息表 -->
+<mapper namespace="com.match.making.dao.CelebrateBaseInfoDAO">
+    <sql id="allColumns">
+        t.id as id, t.title as title, t.title_picture as titlePicture, t.content as content, t.price as price,t.type as type, t.valid as valid, t.created as created, t.updated as updated
+    </sql>
+</mapper>

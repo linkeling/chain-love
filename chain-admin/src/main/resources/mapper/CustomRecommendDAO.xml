@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 推荐信息 -->
+<mapper namespace="com.match.making.dao.CustomRecommendDAO">
+    <sql id="allColumns">
+        t.id as id, t.custom_id as customId, t.recommend as recommend, t.create_date as createDate, t.created as created, t.updated as updated
+    </sql>
+
+    <select id="selectCustomRecommendPage" resultType="com.match.making.param.output.CustomRecommendDTO">
+       SELECT
+	   c.or_id AS orId,
+	   c.open_id AS openId,
+	   c.resident_name AS residentName,
+   	   c.gender AS gender,
+	   c.date_birth AS dateBirth,
+	   c.living_place AS livingPlace,
+	   c.living_place_name AS livingPlaceName,
+	   c.native_place_name AS nativePlaceName,
+	   c.height AS height,
+	   c.weight AS weight,
+	   c.education AS education,
+	   c.profession AS profession,
+	   c.month_income AS monthIncome,
+	   c.house AS house,
+	   c.is_car AS isCar,
+	   c.marriage AS marriage,
+	   c.children AS children,
+	   c.divorce AS divorce,
+	   c.personal AS personal,
+	   c.family AS family,
+	   c.standard AS standard,
+	   c.reject AS reject,
+	   c.telphone AS telphone,
+	   c.wechat AS wechat,
+	   c.picture AS picture,
+	   c.picture1 AS picture1,
+	   c.picture2 AS picture2,
+	   c.number AS number,
+	   c.audit_status AS auditStatus,
+	   c.STATUS AS STATUS,
+	   c.is_show AS isShow,
+	   c.is_check AS isCheck,
+	   t.id as id,
+	   t.custom_id AS customId,
+	   t.recommend AS recommend,
+	   t.create_date AS createDate
+	   FROM custom_recommend t
+	   JOIN custom_base_info c ON t.custom_id = c.id
+	   WHERE 1 =1
+	   <if test="paramMap.gender!=null">
+	     and c.gender=#{paramMap.gender}
+	   </if>
+    </select>
+</mapper>

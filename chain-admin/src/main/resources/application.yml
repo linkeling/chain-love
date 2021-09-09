@@ -1,0 +1,90 @@
+spring:
+  application:
+    name: chain-admin
+  profiles:
+    active: dev
+  http:
+    encoding:
+      force: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+  jackson:
+    dateFormat: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+server:
+  port: 8083
+  connectionTimeout: 180000
+  tomcat:
+    uri-encoding: UTF-8
+    #最大并发数
+    max-threads: 1000
+    #接受和处理的最大连接数
+    max-connections: 20000
+    #初始化时创建的线程数
+    min-SpareThreads: 20
+    acceptCount: 700
+
+mybatis-plus:
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+  mapper-locations: classpath*:mapper/*.xml
+mybatis:
+  custom-cache:
+    flushInterval: 3600
+
+# log
+logging:
+  file: /home/data/logs/${spring.application.name}.log
+  errorFile: /home/data/logs/${spring.application.name}_error.log
+  fileMaxHistory: 30
+  fileMaxSize: 50MB
+  pattern:
+    console: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID} [%X{track_id}] ${spring.application.name}){magenta} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx'
+
+# doc
+swagger:
+  enable: true
+  title: 婚恋系统
+  description: "补充说明详见"
+  basePackage: com.match.making.rest.v1
+  globalHeader: true
+
+
+
+---
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-2vcla0x7x3n7xa9lkno.mysql.cn-chengdu.rds.aliyuncs.com:3306/lianai_db?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: lkl137712
+
+ybs:
+  fileupload:
+    access-key: DYVOZ97UEH13pNjmLUKZtK9J0x6OcF5DikZtkz5x
+    secret-key: lpckwxS4ZhJdaxmZTdKdWPiVI7bTt9CDhkY9YB5X
+    bucket-name: ynmarry
+    domain: http://qjwbckcgb.hn-bkt.clouddn.com/
+
+---
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-2vcla0x7x3n7xa9lkno.mysql.cn-chengdu.rds.aliyuncs.com:3306/hunlian_prod?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: lkl137712
+
+ybs:
+  fileupload:
+    access-key: DYVOZ97UEH13pNjmLUKZtK9J0x6OcF5DikZtkz5x
+    secret-key: lpckwxS4ZhJdaxmZTdKdWPiVI7bTt9CDhkY9YB5X
+    bucket-name: ynmarry
+    domain: https://image.ynmarry.com/
+

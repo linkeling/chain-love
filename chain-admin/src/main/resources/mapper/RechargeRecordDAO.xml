@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 充值记录表 -->
+<mapper namespace="com.match.making.dao.RechargeRecordDAO">
+    <sql id="allColumns">
+        t.id as id, t.user_id as userId, t.create_time as createTime, t.pay_number as payNumber, t.created as created, t.updated as updated
+    </sql>
+</mapper>

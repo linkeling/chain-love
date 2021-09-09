@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 活动报名信息表 -->
+<mapper namespace="com.match.making.dao.ActivityEnterInfoDAO">
+    <sql id="allColumns">
+        t.id as id, t.acivity_id as acivityId, t.customer_id as customerId, t.telphone as telphone, t.customer_name as customerName, t.pay_status as payStatus, t.pay_number as payNumber, t.created as created, 
+        t.updated as updated
+    </sql>
+</mapper>

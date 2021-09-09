@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 客户基本信息表 -->
+<mapper namespace="com.match.making.dao.CustomerBaseInfoDAO">
+    <sql id="allColumns">
+        t.id as id, t.medium_id as mediumId, t.order_id as orderId, t.wechat_number as wechatNumber, t.gender as gender, t.birth_date as birthDate, t.education as education, t.height as height, 
+        t.living_place as livingPlace, t.marriage as marriage, t.trade as trade, t.profession as profession, t.month_income as monthIncome, t.house as house, t.is_car as isCar, t.personal as personal, 
+        t.standard as standard, t.pictures as pictures, t.status as status, t.create_date as createDate, t.is_protect as isProtect, t.level as level, t.created as created, t.updated as updated
+    </sql>
+</mapper>

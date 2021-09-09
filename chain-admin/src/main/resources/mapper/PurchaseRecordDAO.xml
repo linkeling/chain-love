@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 客户购买记录 -->
+<mapper namespace="com.match.making.dao.PurchaseRecordDAO">
+    <sql id="allColumns">
+        t.id as id, t.user_id as userId, t.be_purchased as bePurchased, t.integral as integral, t.create_date as createDate, t.created as created, t.updated as updated
+    </sql>
+</mapper>

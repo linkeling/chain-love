@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 活动基本信息表 -->
+<mapper namespace="com.match.making.dao.ActivityBaseInfoDAO">
+    <sql id="allColumns">
+        t.id as id, t.title as title, t.content as content, t.activity_date as activityDate, t.funds as funds, t.notice as notice, t.status as status, t.created as created, 
+        t.updated as updated
+    </sql>
+</mapper>

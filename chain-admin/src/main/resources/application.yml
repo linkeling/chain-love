@@ -51,7 +51,7 @@ swagger:
   enable: true
   title: 婚恋系统
   description: "补充说明详见"
-  basePackage: com.match.making.rest.v1
+  basePackage: com.ynmarry.chain.rest.v1
   globalHeader: true
 
 

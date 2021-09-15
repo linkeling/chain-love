@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 用户表 -->
-<mapper namespace="com.match.making.dao.SysUserDAO">
+<mapper namespace="com.ynmarry.chain.dao.SysUserDAO">
     <sql id="allColumns">
         t.id as id, t.user_name as userName, t.password as password, t.last_login_time as lastLoginTime, t.last_login_ip as lastLoginIp, t.user_type as userType, t.relation_id as relationId, t.valid as valid, 
         t.role_id as roleId, t.contacts as contacts, t.contacts_phone as contactsPhone, t.create_user as createUser, t.integral as integral, t.created as created, t.updated as updated

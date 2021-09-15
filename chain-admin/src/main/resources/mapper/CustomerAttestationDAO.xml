@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 相亲资料认证表 -->
-<mapper namespace="com.match.making.dao.CustomerAttestationDAO">
+<mapper namespace="com.ynmarry.chain.dao.CustomerAttestationDAO">
     <sql id="allColumns">
         t.id as id, t.customer_id as customerId, t.profession as profession, t.house as house, t.is_car as isCar, t.education as education, t.status as status, t.created as created, 
         t.updated as updated

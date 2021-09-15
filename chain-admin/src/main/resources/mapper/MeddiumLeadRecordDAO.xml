@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 红娘引入记录 -->
-<mapper namespace="com.match.making.dao.MeddiumLeadRecordDAO">
+<mapper namespace="com.ynmarry.chain.dao.MeddiumLeadRecordDAO">
     <sql id="allColumns">
         t.id as id, t.medium_id as mediumId, t.be_medium_id as beMediumId, t.lead_date as leadDate, t.created as created, t.updated as updated
     </sql>

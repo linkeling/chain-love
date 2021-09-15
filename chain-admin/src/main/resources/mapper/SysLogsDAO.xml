@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 系统管理 - 日志表 -->
-<mapper namespace="com.match.making.dao.SysLogsDAO">
+<mapper namespace="com.ynmarry.chain.dao.SysLogsDAO">
     <sql id="allColumns">
         t.id as id, t.api_name as apiName, t.api_url as apiUrl, t.user_ip as userIp, t.user_id as userId, t.status as status, t.execute_time as executeTime, t.created as created, 
         t.updated as updated

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 地区字典 -->
-<mapper namespace="com.match.making.dao.DictAreaDAO">
+<mapper namespace="com.ynmarry.chain.dao.DictAreaDAO">
     <sql id="allColumns">
         t.id as id, t.area_code as areaCode, t.area_name as areaName, t.alias as alias, t.full_name as fullName, t.area_level as areaLevel, t.parent_code as parentCode, t.external_system_code as externalSystemCode, 
         t.status as status, t.created as created, t.updated as updated

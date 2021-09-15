@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 红娘基本信息表 -->
-<mapper namespace="com.match.making.dao.MediumBaseInfoDAO">
+<mapper namespace="com.ynmarry.chain.dao.MediumBaseInfoDAO">
     <sql id="allColumns">
         t.id as id, t.parent_id as parentId, t.order_id as orderId, t.medium_name as mediumName, t.gender as gender, t.id_card as idCard, t.telphone as telphone, t.level as level, 
         t.create_date as createDate, t.status as status, t.created as created, t.updated as updated

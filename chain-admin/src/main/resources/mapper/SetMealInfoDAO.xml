@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
-<!-- 详情套餐信息 -->
-<mapper namespace="com.match.making.dao.SetMealInfoDAO">
-    <sql id="allColumns">
-        t.id as id, t.create_user_id as createUserId, t.price as price, t.content as content, t.status as status, t.created as created, t.updated as updated
-    </sql>
-</mapper>

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 用户喜欢记录 -->
-<mapper namespace="com.match.making.dao.CustomerLikeRecordDAO">
+<mapper namespace="com.ynmarry.chain.dao.CustomerLikeRecordDAO">
     <sql id="allColumns">
         t.id as id, t.user_id as userId, t.customer_id as customerId, t.customer_user_id as customerUserId, t.message as message, t.status as status, t.created as created, t.updated as updated
     </sql>

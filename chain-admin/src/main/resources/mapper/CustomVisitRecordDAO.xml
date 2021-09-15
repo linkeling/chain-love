@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
-<!-- 客户跟进记录 -->
-<mapper namespace="com.match.making.dao.CustomVisitRecordDAO">
-    <sql id="allColumns">
-        t.id as id, t.visit_info_id as visitInfoId, t.content as content, t.picture_ids as pictureIds, t.created as created, t.updated as updated
-    </sql>
-</mapper>

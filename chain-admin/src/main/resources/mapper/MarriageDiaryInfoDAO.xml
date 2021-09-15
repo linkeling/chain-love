@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
-<!-- 婚恋日记信息表 -->
-<mapper namespace="com.match.making.dao.MarriageDiaryInfoDAO">
-    <sql id="allColumns">
-        t.id as id, t.gender as gender, t.picture_ids as pictureIds,t.title as title,title_picture,as titlePicture, t.content as content, t.create_date as createDate, t.valid as valid, t.created as created, t.updated as updated
-    </sql>
-</mapper>

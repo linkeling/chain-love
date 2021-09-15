@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 附件资源日志 -->
-<mapper namespace="com.match.making.dao.PicturesInfoDAO">
+<mapper namespace="com.ynmarry.chain.dao.PicturesInfoDAO">
     <sql id="allColumns">
         t.id as id, t.uuid as uuid, t.server_id as serverId, t.download_url as downloadUrl, t.size as size, t.md5_hash as md5Hash, t.sha1_hash as sha1Hash, t.file_name as fileName, 
         t.file_type as fileType, t.parent_id as parentId, t.description as description, t.tags as tags, t.valid_status as validStatus, t.created as created, t.updated as updated
